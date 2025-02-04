@@ -1,18 +1,21 @@
-// pages/_app.js
-import '../styles/globals.css';
+// app/layout.js
+import '../styles/globals.css'; // Import your global CSS
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-function MyApp({ Component, pageProps }) {
+export const metadata = {
+  title: 'My Next.js App',
+  description: 'Converted from a React App',
+};
+
+export default function RootLayout({ children }) {
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Component {...pageProps} />
-      </main>
-      <Footer />
-    </div>
+    <html lang="en">
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
   );
 }
-
-export default MyApp;
