@@ -13,7 +13,7 @@ function Navbar() {
           </li>
           <li>
             <Link href="/writing">
-              Writing
+              Blog
             </Link>
           </li>
           <li>
@@ -23,7 +23,7 @@ function Navbar() {
           </li>
           <li>
             <Link href="/speaking">
-              Speaking
+              Misc
             </Link>
           </li>
         </ul>

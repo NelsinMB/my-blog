@@ -3,7 +3,7 @@ import styles from './Projects.module.css';
 const projects = [
   {
     id: 1,
-    title: "Project One",
+    title: "Giraph",
     description: "A brief description of Project One. This project involved innovative design and thoughtful development.",
     link: "#"
   },
@@ -13,12 +13,7 @@ const projects = [
     description: "A brief description of Project Two. This project focused on usability and modern aesthetics.",
     link: "#"
   },
-  {
-    id: 3,
-    title: "Project Three",
-    description: "A brief description of Project Three. An exploration into minimalism and interactive design.",
-    link: "#"
-  }
+
   // Add more projects as needed
 ];
 
