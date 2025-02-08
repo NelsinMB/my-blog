@@ -84,9 +84,6 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <footer className={styles.footer}>
-        <p>© 2024 Nelsin. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
