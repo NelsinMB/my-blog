@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import "../app/styles/globals.css"
 
 export default function Game() {
     const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -14,6 +13,7 @@ export default function Game() {
     }
 
     function jumpTo(nextMove) {
+        console.log("Jump to move: ", nextMove);
         setCurrentMove(nextMove);
     }
 
