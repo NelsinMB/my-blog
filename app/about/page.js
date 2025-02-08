@@ -50,7 +50,7 @@ export default function AboutPage() {
       <main className={styles.main}>
         <section className={`${styles.hero} ${styles.fadeIn}`}>
           <img
-            src="/images/profile.jpg"
+            src="/me.png"
             alt="Profile"
             className={styles.profileImage}
           />
@@ -61,16 +61,13 @@ export default function AboutPage() {
             <h1>About Me</h1>
             <p className={styles.description}>
               I'm Nelsin. A recent graduate from McGill University with a background 
-              in Mathematics & Computer Science. I love learning and exploring new technologies
-              while building meaningful projects.
+              in Mathematics & Computer Science. I love learning.
             </p>
           </div>
 
           <ul className={`${styles.timeline} ${styles.fadeIn}`}>
-            <li>Recent McGill University graduate</li>
-            <li>Mathematics & Computer Science background</li>
-            <li>Passionate about learning and exploration</li>
-            <li>Building meaningful projects</li>
+            <li>Joint-Honours Mathematics & Computer Science (B.Sc.)</li>
+            <li>Prev. Teaching Assistant @ McGill University</li>
           </ul>
 
           <div className={`${styles.socialLinks} ${styles.fadeIn}`}>

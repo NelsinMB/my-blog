@@ -6,7 +6,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: var(--background-color, #ffffff);
+  background-color: var(--background-color, #a3b18a);
+  font-family: 'Times';
 }
 
 /* Header styling */
@@ -63,6 +64,7 @@
   color: var(--text-color, #2d2d2d);
   max-width: 650px;
   margin: 0 auto;
+  font-family: 'Times';
 }
 
 .content p {
@@ -75,13 +77,16 @@
   margin: 0 auto;
   padding: 4rem 2rem;
   flex: 1;
+  font-family: 'Times';
 }
 
 /* Timeline styling */
 .timeline {
   list-style: none;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
   padding-left: 1.5rem;
+  font: 'Times';
+  font-size: 1.1rem;
 }
 
 .timeline li {
@@ -143,6 +148,15 @@
   transform: translateY(0);
 }
 
+.description {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font: 'Times';
+
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .container {
@@ -177,4 +191,6 @@
   .main {
     padding: 2rem 1rem;
   }
+
+  
 }
