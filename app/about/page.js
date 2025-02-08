@@ -34,18 +34,6 @@ export default function AboutPage() {
 
   return (
     <div className={styles.container}>
-      <nav className={styles.navbar}>
-        <div className={styles.navContent}>
-        
-          <button 
-            className={styles.themeToggle} 
-            onClick={toggleDarkMode}
-            aria-label="Toggle dark mode"
-          >
-            {isDarkMode ? '🌞' : '🌙'}
-          </button>
-        </div>
-      </nav>
 
       <main className={styles.main}>
         <section className={`${styles.hero} ${styles.fadeIn}`}>

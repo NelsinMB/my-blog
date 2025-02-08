@@ -22,7 +22,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/speaking">
+            <Link href="/misc">
               Misc
             </Link>
           </li>
