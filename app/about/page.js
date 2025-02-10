@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import styles from "./About.module.css";
 
 export default function AboutPage() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     // Fade-in animation using IntersectionObserver
@@ -26,11 +25,6 @@ export default function AboutPage() {
       elements.forEach((el) => observer.unobserve(el));
     };
   }, []);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark-mode');
-  };
 
   return (
     <div className={styles.container}>
