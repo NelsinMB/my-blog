@@ -1,5 +1,9 @@
 // app/page.js
 
-export default function HomePage() {
-    
+export default function Home() {
+    return (
+        <div className="home">
+
+        </div>
+      );
 }
