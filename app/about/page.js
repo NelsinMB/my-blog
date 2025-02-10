@@ -17,8 +17,16 @@ export default function AboutPage() {
       { threshold: 0.1 }
     );
     
-    const elements = document.querySelectorAll(`.${styles.fadeIn}`);
-    elements.forEach((el) => observer.observe(el));
+    /*
+    Iterate over each element in the set. The argument is a callback function. 
+    The callback function has specific parameters, the first being the element. This is associated to el (forgot the name of this technique).
+    The callback function in this case is the observer method (or function?) of the observer object of class type InteractionObserver. I think here the parameter, el, might be multiple which is why it is iterated over in the observe function definition. Need to check this.
+    Want to include more information about the observe method of the IntersctionObserver. 
+    */
+
+
+    const elements = document.querySelectorAll(`.${styles.fadeIn}`); // Create a set of elements that have the CSS class associated with styles.fadeIn
+    elements.forEach((el) => observer.observe(el)); 
 
     // Cleanup observer on unmount
     return () => {
