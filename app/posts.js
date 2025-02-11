@@ -47,14 +47,25 @@ export function getAllPostsSlugs() {
 
 export async function getPostData(slug) { //async allows the usage of the await keyword, which allows for a pause in execution until asynchronous opertions complete.
     const fullPath = path.join(postsDirectory, '${slug}.md'); // Builds the full path to the Markdown file.
-    const fileContents = fs.readFileSync(fullpath, 'utf8');
+    const fileContents = fs.readFileSync(fullpath, 'utf8'); // File content is interpreted as a string.
 
-    const matterResult = matter(fileContents);
+    const matterResult = matter(fileContents); // Processes the Markdown file using a function from gray-matter package.
+
+
+    /*
+    - remark() initializes the remark processor.
+    - .use(html) tells remark to use the remark-html plugin, converting Markdown into HML.
+    - .process(matterResult.content) processes the Markdown content found in the content property.
+    - await pauses execution until the Markdown-to-HTML conversion is complete.
+    */
 
     const processedContent = await remark().use(html).process(matterResult.content);
     const contentHTML = processedContent.toString();
 
-
-
+    return {
+        slug,
+        contentHTML,
+        ...matterResult.data, // This lines takes the key-value pairs from matterResult.data and adds them to the new object. Uses the spread operator.
+    };
 
 }
