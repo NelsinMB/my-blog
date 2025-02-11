@@ -12,7 +12,7 @@ export function getSortedPostsData() {
         
         const slug = fileName.replace(/\.md$/, ''); //What are slugs?
 
-        const fullPath = path.join(postsDierctory, fileName);
+        const fullPath = path.join(postsDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
         const matterResult = matter(fileContents);
