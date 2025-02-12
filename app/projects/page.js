@@ -17,9 +17,9 @@ const projects = [
   // Add more projects as needed
 ];
 
-function Projects() {
+export default function Projects() {
   return (
-    <section className={styles.projects}>
+    <section className="container">
       <div className={styles.projectsContent}>
         <h1>Projects</h1>
         <div className={styles.projectsGrid}>
@@ -38,4 +38,3 @@ function Projects() {
   );
 }
 
-export default Projects;

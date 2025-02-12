@@ -52,7 +52,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
 
       <main className={styles.main}>
         <section className={`${styles.hero} ${styles.fadeIn}`}>

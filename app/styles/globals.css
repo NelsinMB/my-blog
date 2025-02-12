@@ -21,6 +21,18 @@ main {
   flex: 1;
 }
 
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color, #a3b18a);
+  font-family: 'Times';
+}
+
 /* Navbar Styles */
 .navbar {
   padding: 2rem;
@@ -78,35 +90,3 @@ main {
   border-top: 1px solid #eaeaea;
 }
 
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
-}

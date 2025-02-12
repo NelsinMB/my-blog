@@ -1,11 +1,7 @@
 /* Projects.module.css */
 
 /* Overall container for the projects page */
-.projects {
-  padding: 6rem 2rem;
-  background-color: #f5f3ef;
-  min-height: 100vh;
-}
+
 
 /* Content centering */
 .projectsContent {

@@ -3,7 +3,7 @@ import TicTacToe from "../../components/Tictactoe";
 
 export default function Page() {
   return (
-    <div
+    <div className = "container"
       style={{
         display: "flex",
         justifyContent: "center", // centers horizontally

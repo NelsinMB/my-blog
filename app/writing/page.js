@@ -6,7 +6,7 @@ export default async function WritingPage() {
   const allPostsData = getSortedPostsData();
 
   return (
-    <div>
+    <div className="container">
       {allPostsData.map(post => (
         <div key={post.slug}>{post.title}</div>
       ))}
