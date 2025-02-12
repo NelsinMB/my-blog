@@ -4,13 +4,13 @@ const projects = [
   {
     id: 1,
     title: "Giraph",
-    description: "A brief description of Project One. This project involved innovative design and thoughtful development.",
+    description: "A toolkit to facililate the exploration of graph theory.",
     link: "#"
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "A brief description of Project Two. This project focused on usability and modern aesthetics.",
+    title: "Unnamed note-taking app",
+    description: "A note-taking app composed of a set of features I wish note-taking apps had.",
     link: "#"
   },
 
