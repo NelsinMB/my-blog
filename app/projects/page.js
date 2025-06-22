@@ -3,14 +3,14 @@ import styles from './Projects.module.css';
 const projects = [
   {
     id: 1,
-    title: "Giraph",
-    description: "A toolkit to facililate the exploration of graph theory.",
+    title: "",
+    description: "",
     link: "#"
   },
   {
     id: 2,
-    title: "Unnamed note-taking app",
-    description: "A note-taking app composed of a set of features I wish note-taking apps had.",
+    title: "",
+    description: "",
     link: "#"
   },
 

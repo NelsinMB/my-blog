@@ -68,7 +68,7 @@ export default function AboutPage() {
             <h1>About Me</h1>
             <p className={styles.description}>
               I'm Nelsin. A recent graduate from McGill University with a background 
-              in Mathematics & Computer Science. I love learning.
+              in Mathematics & Computer Science.
             </p>
           </div>
 
