@@ -1,5 +1,3 @@
-mkdir -p posts
-cat << 'EOF' > posts/hello-world.md
 ---
 title: "Hello, World!"
 date: "2025-07-16"
@@ -15,5 +13,4 @@ Here’s where you write your content in Markdown:
 - Talk about what you’ll cover
 - Link to other pages, etc.
 
-Enjoy!  
-EOF
+Enjoy!
