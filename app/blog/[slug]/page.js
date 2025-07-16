@@ -1,6 +1,5 @@
-// app/blog/[slug]/page.js
 import { notFound } from 'next/navigation'
-import { getAllPosts } from '../../posts'
+import { getAllPosts, getPost } from '../../posts'
 import ReactMarkdown from 'react-markdown'
 
 export async function generateStaticParams() {
@@ -10,7 +9,6 @@ export async function generateStaticParams() {
 export default function BlogPostPage({ params }) {
   const post = getAllPosts().find(p => p.meta.slug === params.slug)
   if (!post) return notFound()
-
   return (
     <article className="prose mx-auto p-6">
       <h1>{post.meta.title}</h1>
