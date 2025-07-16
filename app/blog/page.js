@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getAllPosts } from '../posts'
+import { getSortedPostsData as getAllPosts } from '../posts.js';
 
 export const metadata = {
   title: 'Blog',

@@ -1,6 +1,7 @@
-import { notFound } from 'next/navigation'
-import { getAllPosts, getPost } from '../../posts'
-import ReactMarkdown from 'react-markdown'
+import {
+    getSortedPostsData as getAllPosts,
+    getPostData       as getPost
+} from '../../posts.js';
 
 export async function generateStaticParams() {
   return getAllPosts().map(({ meta }) => ({ slug: meta.slug }))
