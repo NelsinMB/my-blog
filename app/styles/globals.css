@@ -21,16 +21,17 @@ main {
   flex: 1;
 }
 
+/* The main page just returns div with className=container so this decides that */
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 800px;
   align-items: center;
   margin: 0 auto;
   padding: 2rem;
-  background-color: var(--background-color, #a3b18a);
-  font-family: 'Times';
+  background-color: var(--background-color, #dad7cd);
+  font-family: 'Garamond';
 }
 
 /* Navbar Styles */
