@@ -2,6 +2,7 @@
 import '../app/styles/globals.css'; // Import your global CSS
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AboutPage from './about/page';
 
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <main>{children}</main>
+        
       </body>
     </html>
   );
