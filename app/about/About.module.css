@@ -1,14 +1,16 @@
-/* Container and layout */
-.container {
-  min-height: 100vh;
+/* app/page.module.css */
+.page {
+  height: 100dvh; /* fills the viewport */
   display: flex;
-  flex-direction: column;
-  max-width: 1000px;
   align-items: center;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: var(--background-color, #a3b18a);
-  font-family: 'Times';
- }
+  justify-content: center;
+  background: white;
+  gap: 40px;
+}
 
 
+.name {
+  color: #3f5621; /* muted green */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
