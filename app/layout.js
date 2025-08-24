@@ -1,7 +1,6 @@
 // app/layout.js
 import '../app/styles/globals.css'; // Import your global CSS
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import AboutPage from './about/page';
 
 
