@@ -1,9 +1,15 @@
 import AboutPage from "./about/page";
+import { getSortedPostsData } from "../lib/posts";
+
+
 
 // app/page.js
-export default function HomePage() {
+export default function Home() {
+
   return (
-    <AboutPage />
+    <main>
+       <AboutPage />
+    </main>
   )
 }
 
