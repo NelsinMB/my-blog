@@ -2,20 +2,23 @@
 import '../app/styles/globals.css'; // Import your global CSS
 import Navbar from '../components/Navbar';
 import AboutPage from './about/page';
+import Link from 'next/link';
 
 
 export const metadata = {
-  title: 'My Next.js App',
-  description: 'Converted from a React App',
+  title: 'My Personal Website',
+  description: 'A Nelsin website',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <main>{children}</main>
-        
       </body>
+
     </html>
+    
   );
 }
