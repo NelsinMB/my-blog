@@ -14,7 +14,16 @@ export async function generateStaticParams() {
 
 // 2) The page component receives { params } automatically
 export default async function PostPage({ params }) {
-  const post = await getPostData(params.id); // your helper should read /posts/<id>.md and return HTML/string
+
+  /*
+  - await means "Pause here until this Promise finishes, then provide the result"
+  - 'const {id} = await params;' is equivalent to
+      const id = (await params).id
+  This is JS object destructuring syntax. 
+  */
+
+  const {id} = await params;
+  const post = await getPostData(id); // your helper should read /posts/<id>.md and return HTML/string
 
   return (
     <article>
